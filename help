@@ -1,0 +1,98 @@
+See the end of this message for details on invoking 
+just-in-time (JIT) debugging instead of this dialog box.
+
+************** Exception Text **************
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:443
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at AG;MQZ!S\\\\4Ghvv@PIAgICc;G.‮⁫‬‪‍⁭⁫⁬‪⁪⁮‌‮‏‎⁭⁪⁮‬‌‬‪‌⁭‪​‏‪⁫‌‏​‮⁬⁭⁪‏‮‪‌‮[T0,T1,T2](T0 , T1 )
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at (Object , EventArgs )
+   at A.c180b9e03e567289c12707199a03c6cb1.c47fcf75be1d86fbedd640b86e00e056e(Object cc41b940a69bef0e6fe75b2e8545f3226, EventArgs cc41b940a69bef0e6fe75b2e8545f3226)
+   at Siticone.UI.WinForms.Suite.CustomButtonBase.OnClick(EventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+************** Loaded Assemblies **************
+mscorlib
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.8.4390.0 built by: NET48REL1LAST_C
+    CodeBase: file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/mscorlib.dll
+----------------------------------------
+Segs
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Users/chris/d/Desktop/New%20folder%20(2)/Segs.exe
+----------------------------------------
+EWufEVuBttploFtdGXALqiCiAjPe
+    Assembly Version: 0.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Users/chris/d/Desktop/New%20folder%20(2)/Segs.exe
+----------------------------------------
+System.Windows.Forms
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.8.4390.0 built by: NET48REL1LAST_C
+    CodeBase: file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+----------------------------------------
+System
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.8.4360.0 built by: NET48REL1LAST_C
+    CodeBase: file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+----------------------------------------
+System.Drawing
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.8.4390.0 built by: NET48REL1LAST_C
+    CodeBase: file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+----------------------------------------
+Siticone.UI
+    Assembly Version: 1.0.0.3
+    Win32 Version: 1.0.0.3
+    CodeBase: file:///C:/Users/chris/d/Desktop/New%20folder%20(2)/Siticone.UI.DLL
+----------------------------------------
+Siticone.UI&
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.3
+    CodeBase: file:///C:/Users/chris/d/Desktop/New%20folder%20(2)/Siticone.UI.dll
+----------------------------------------
+System.Configuration
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.8.4190.0 built by: NET48REL1LAST_B
+    CodeBase: file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+----------------------------------------
+System.Core
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.8.4390.0 built by: NET48REL1LAST_C
+    CodeBase: file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+----------------------------------------
+System.Xml
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.8.4084.0 built by: NET48REL1
+    CodeBase: file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+----------------------------------------
+
+************** JIT Debugging **************
+To enable just-in-time (JIT) debugging, the .config file for this
+application or computer (machine.config) must have the
+jitDebugging value set in the system.windows.forms section.
+The application must also be compiled with debugging
+enabled.
+
+For example:
+
+<configuration>
+    <system.windows.forms jitDebugging="true" />
+</configuration>
+
+When JIT debugging is enabled, any unhandled exception
+will be sent to the JIT debugger registered on the computer
+rather than be handled by this dialog box.
+
+
